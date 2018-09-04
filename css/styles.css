@@ -33,11 +33,6 @@ h2 {
   font-size: 1.1em;
 }
 
-fieldset h2 {
-  padding-top: 2em;
-  border-top: 2px solid black;
-}
-
 p {
   color: #8a97a0;
   text-align: center;
@@ -45,7 +40,12 @@ p {
   font-size: 0.875em;
 }
 
-legend,
+legend {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 1em 0 1em;
+}
+
 label {
   padding-bottom: 1em;
   padding-top: 7px;
@@ -68,9 +68,9 @@ select {
   color: #8a97a0;
   margin-bottom: 1em;
   border-radius: 3px;
-  transition-property: background-color;
-  transition-duration: 0.25s;
-  transition-timing-function: linear;
+  transition-property: border, background-color;
+  transition-duration: .35s;
+  transition-timing-function: ease-in-out;
 }
 
 input[type="text"]:focus,
@@ -79,6 +79,7 @@ input[type="tel"]:focus,
 textarea:focus,
 select:focus {
     background-color: rgba(191, 239, 237, 0.6);
+    border: 2px solid rgba(42, 167, 151, 0.77);
 }
 
 input[type="checkbox"],
@@ -95,6 +96,11 @@ input[id="email"]::placeholder {
   color: #687885;
 }
 
+input[id="news_js"],
+input[id="plain_text"] {
+  margin-bottom: 2em;
+}
+
 input::placeholder {
   text-align: left;
   font-size: 0.7em;
@@ -102,8 +108,10 @@ input::placeholder {
   color: #a8b7c1;
 }
 
-input:focus {
-  border: 2px solid rgba(42, 167, 151, 0.77);
+fieldset div {
+  padding-bottom: 1em;
+  color: #8a97a0;
+  font-size: 0.875em;
 }
 
 button {
@@ -183,12 +191,6 @@ textarea
 
 .col-2 {
   width: 75%;
-}
-
-.experiment {
-  margin: auto;
-  width: 768px;
-  background-color: #ffffff;
 }
 
 }

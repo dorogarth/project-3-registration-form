@@ -10,7 +10,6 @@
 </head>
 
 <body>
-	<div class="experiment">
 		<h1 id="top">The Code Review</h1>
 		
 			<div class="header">
@@ -20,9 +19,8 @@
 		<div class="container">
 			<form action="index.html" method="post">
 
-				<h2>Contact Information</h2>
 				<fieldset>
-
+					<legend>Contact Information</legend>
 						<label for="name" class="col-1">Full Name</label>
 						<input type="text" id="name" name="user_name" placeholder="Required" class="col-2" required>
 
@@ -98,11 +96,10 @@
 							<input type="text" id="zip" name="user_name" placeholder="12345" class="col-2">
 				</fieldset>
 
-				<h2>Newsletter</h2>
-
 				<fieldset>
-
-					<legend>Select the newsletters you would like to receive</legend>
+						<legend>Newsletter</legend>
+						
+					<div>Select the newsletters you would like to receive</div>
 
 						<input type="checkbox" id="news_html" name="newsletter" value="html" checked />
 						<label for="news_html">HTML News</label><br>
@@ -113,11 +110,11 @@
 						<input type="checkbox" id="news_js" name="newsletter" value="js" />
 						<label for="news_js">Javascript News</label><br>
 
-					<legend>Newsletter format</legend>
+					<div>Newsletter format</div>
 
 						<input type="radio" id="html" value="html" name="text_type"><label for="html">HTML</label><br>
 
-						<input type="radio" id="plain_text" value="plain_text" name="text_type"><label for="plain_text" >Plain text</label><br>
+						<input type="radio" id="plain_text" value="plain_text" name="text_type"><label for="plain_text">Plain text</label><br>
 
 						<label for="topics">Other topics you'd like to hear about</label>
 						<textarea id="topics" name="topics"></textarea>
@@ -132,5 +129,4 @@
 
 			</form>
 		</div>
-	</div>
 </body>
